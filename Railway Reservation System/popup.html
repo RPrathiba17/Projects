@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+              background-image: url(train.jpg);
+              margin:0;
+              font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+              background-size: 1500px;
+            }
+        * {box-sizing: border-box;}
+        .navbar{
+            overflow:hidden;
+            background-color: white;   
+        }
+        .navbar a{
+            float: left;
+            display: block;
+            color: black;  /*text color*/
+            text-align: center;
+            padding: 20px 40px;
+            text-decoration: none;
+            font-size: x-large;
+        }
+        .navbar a:hover{
+            background-color: white;
+            color: black;
+        }
+        .navbar a:active{
+            background-color: white;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active) {
+            background-color: rgb(175, 63, 63);
+        }
+        .active {
+            background-color: #04AA6D;
+        }
+        input[type=text], select, textarea {
+          width: 80%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        .container {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: wheat;
+  color: black;
+  border-radius:15px;
+  opacity: 0.7;
+  width:50%;
+  height: 50%;
+}
+button {
+            background-color: rgb(175, 63, 63);
+            color: white;
+            padding: 20px 20px;
+            margin: 15px 15px;
+            border-radius:15px;
+            cursor: pointer;
+            width: 40%;
+            border:none;
+        }
+        </style>
+</head>
+
+<body>  
+    <div class = "navbar">
+        <ul> 
+        <li><a href="book.html">Booking</a></li>
+        <li><a href="popup.html">Cancel</a></li>
+        <li style="float:right"><a href="register.html">Register</a></li>
+    </ul>
+    </div>
+    <br><br><br>
+    <form method="post" action="cancel.jsp">
+    <center><div class="container">
+        <h2>Cancellation</h2><br>
+      <label id="nm">Enter name:</label><br>
+      <input type="text" name="pname" placeholder="Enter name"/><br>
+      <label id = "seat">Enter seat number:</label><br>
+      <input type="text" name="seatno" placeholder="Enter seat number"/><br>
+      <button type="submit">Cancel</button>
+      
+    </form>
+</div>  
+</center>
+ 
+
+</body>
+</html>  
+
+ 

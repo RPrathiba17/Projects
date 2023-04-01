@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            margin:0;
+            font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+            background-image: url(train.jpg);
+            background-size: 1370px;
+        }
+        .navbar{
+            overflow:hidden;
+            background-color: white;   
+        }
+        .navbar a{
+            float: left;
+            display: block;
+            color: black;  /*text color*/
+            text-align: center;
+            padding: 20px 40px;
+            text-decoration: none;
+            font-size: x-large;
+        }
+        .navbar a:hover{
+            background-color: white;
+            color: black;
+        }
+        .navbar a:active{
+            background-color: white;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active) {
+            background-color: rgb(175, 63, 63);
+        }
+        .active {
+            background-color: #04AA6D;
+        }
+        input[type=text], input[type=password], select, textarea{
+            width: 40%;
+            padding: 20px 20px;
+            margin: 15px 15px;
+            display: inline-block;
+            border: none;
+            border-radius:15px;
+            box-sizing:border-box;
+        }
+        button {
+            background-color: rgb(175, 63, 63);
+            color: white;
+            padding: 20px 20px;
+            margin: 15px 15px;
+            border-radius:15px;
+            cursor: pointer;
+            width: 40%;
+            border:none;
+        }
+        .container{
+            position: relative;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background-color: wheat;
+            color: black;
+            border-radius:15px;
+            opacity: 0.7;
+            width:50%;
+            height: 50%;
+        }
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "navbar">
+        <ul> 
+        <li><a href="book.html">Booking</a></li>
+        <li><a href="popup.html">Cancel</a></li>
+        <li style="float:right"><a href="register.html">Register</a></li>
+    </ul>
+    </div>
+    <form action = "register.jsp" method="post">
+        <br><br><br><br>
+    <center><div class="container">
+        <h2>REGISTER</h2>
+        <input type="text" placeholder="Enter Username/email" name="uname" required><br>
+        <input type="password" placeholder="Enter Password" name="psw" required><br>
+        <button type="submit">Sign up</button>
+    </form>
+    </div>
+</center>
+</form>
+</body>
+</html>

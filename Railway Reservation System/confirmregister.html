@@ -1,0 +1,88 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Registration</title>
+    <head>
+        <style>
+            body {
+               margin:0;
+               font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+      }
+    * {box-sizing: border-box;}
+           .navbar{
+                overflow:hidden;
+                background-color: white;   
+            }
+            .navbar a{
+                float: left;
+                display: block;
+                color: black;  /*text color*/
+                text-align: center;
+                padding: 20px 40px;
+                text-decoration: none;
+                font-size: x-large;
+            }
+            .navbar a:hover{
+                background-color: white;
+                color: black;
+            }
+            .navbar a:active{
+                background-color: white;
+                color: white;
+            }
+            .container{
+                position: relative;
+                text-align: center;
+                color: black;
+                margin: 0 auto;
+            }
+            .centered{
+                position: absolute;
+                top: 100px;
+                left: 200px;
+                font: Brush Script MT;
+                font-size:xx-large;
+                color: black;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: white;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            li a:hover:not(.active) {
+                background-color: rgb(175, 63, 63);
+            }
+            .active {
+                background-color: #04AA6D;
+            }
+        </style>
+        </head>
+            <div class = "navbar">
+                <ul> 
+                <li><a href="book.html">Booking</a></li>
+                <li><a href="cancel.html">Cancel</a></li>
+                <li style="float:right"><a href="register.html">Register</a></li>
+            </ul>
+            </div>
+            <div class = "container">
+                <img src = "train.jpg" width = "1350">
+                <div class = "centered">
+            <h3>You have been registered successfully.<br> Thank you! <br></h3>
+        </div>
+          </div>
+    </html>

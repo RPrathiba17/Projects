@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainticketreservation</title>
+    <style>
+        body{
+            margin:0;
+            font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            padding: 2px;
+            text-align: center;
+            background: wheat;
+            color: rgb(175, 63, 63);
+            font-size: 30px;
+        }
+        .navbar{
+            overflow:hidden;
+            background-color: wheat;   
+        }
+        .navbar a{
+            float: left;
+            display: block;
+            color: black;  /*text color*/
+            text-align: center;
+            padding: 20px 40px;
+            text-decoration: none;
+            font-size: x-large;
+        }
+        .navbar a:hover{
+            background-color: wheat;
+            color: black;
+        }
+        .navbar a:active{
+            background-color: white;
+            color: white;
+        }
+        img{
+            vertical-align: middle;
+        }
+        .container{
+            position: relative;
+            text-align: center;
+            color: black;
+            margin: 0 auto;
+        }
+        .centered{
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            font: Brush Script MT;
+            font-size:xx-large;
+            color: black;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: wheat;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active) {
+            background-color: rgb(175, 63, 63);
+        }
+        .active {
+            background-color: #04AA6D;
+        }
+        .content {
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img style="display: inline;" src="ir logo.png" alt="logo" width="100" height="100" />
+        <h1 style="display: inline;">IRC Railways</h1>
+      </div>
+    <div class = "navbar">
+        <ul> 
+        <li><a href="book.html">Booking</a></li>
+        <li><a href="popup.html">Cancel</a></li>
+        <li style="float:right"><a href="register.html">Register</a></li>
+    </ul>
+    </div>
+    <div class = "container">
+        <img src = "train.jpg" width = "1350">
+        <div class = "centered">
+            <h1>Welcome to <br> Indian Railways </h1>
+        </div>
+    </div>
+</body>
+
+</html>

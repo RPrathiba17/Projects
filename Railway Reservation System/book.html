@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+      background-image: url(train.jpg);
+      margin:0;
+      font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+      background-size: 2000px;
+    }
+* {box-sizing: border-box;}
+
+.navbar{
+            overflow:hidden;
+            background-color: wheat;   
+        }
+        .navbar a{
+            float: left;
+            display: block;
+            color: black;  /*text color*/
+            text-align: center;
+            padding: 20px 40px;
+            text-decoration: none;
+            font-size: x-large;
+        }
+        .navbar a:hover{
+            background-color: white;
+            color: black;
+        }
+        .navbar a:active{
+            background-color: white;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active) {
+            background-color: rgb(175, 63, 63);
+        }
+        .active {
+            background-color: #04AA6D;
+        }
+input[type=text], select, textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=date]{
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=button] {
+  background-color: rgb(175, 63, 63);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 56px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: rgb(175, 63, 63);
+}
+
+input[type=submit] {
+  background-color: rgb(175, 63, 63);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 56px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: wheat;
+  color: black;
+  border-radius:15px;
+  opacity: 0.7;
+  width:50%;
+  height: 50%;
+}
+</style>
+</head>
+<body>
+  <div class = "navbar">
+    <ul> 
+    <li><a href="book.html">Booking</a></li>
+    <li><a href="popup.html">Cancel</a></li>
+    <li style="float:right"><a href="register.html">Register</a></li>
+</ul>
+</div>
+
+<form method="post" action="book.jsp">
+  
+<br><br><br>
+<center><div class="container">
+  <h2>Booking</h2><br>
+  <name="seatno">
+<label id="nm">Enter name:</label><br>
+<input type="text" name="pname" placeholder="Enter name"/><br>
+<label id="un">Enter username:</label><br>
+<input type="text" name="uname" placeholder="Enter username"/><br>
+<label id="g">Gender:</label><br>
+ <select id="country" name="gen">
+  <option value="M">Male</option>
+  <option value="F">Female</option>
+  <option value="O">Others</option>
+    </select><br>
+
+<label id="age">Age:</label><br>
+<input type="text" name="age" placeholder="Enter age"/><br>
+
+<label id="a">source:</label><br>
+ <select id="country" name="src">
+  <option value="MS">Chennai</option>
+  <option value="bngl">Bangalore</option>
+  <option value="mum">Mumbai</option>
+  <option value="MDU">Madurai</option>
+  <option value="kol">Kolkata</option>
+  <option value="Dhl">Delhi</option>
+  <option value="Jpr">Jaipur</option>
+  <option value="Hyd">Hyderabad</option>
+  <option value="Pun">Pune</option>
+
+    </select><br>
+	</label id="b">destination:<label><br>
+ <select id="country1" name="dest">
+  <option value="MS">Chennai</option>
+  <option value="bngl">Bangalore</option>
+  <option value="mum">Mumbai</option>
+  <option value="MDU">Madurai</option>
+  <option value="kol">Kolkata</option>
+  <option value="Dhl">Delhi</option>
+  <option value="Jpr">Jaipur</option>
+  <option value="Hyd">Hyderabad</option>
+  <option value="Pun">Pune</option>      
+</select><br>
+      <label id="c">depart:</label><br>
+      <input type="date" id="c" name="dat" /><br>
+    <label id="b">Travel Class</label><br>
+      <select id="Type" name="trainclass">
+        <option value="1C">First Class</option>
+       <option value="AC 2T">AC 2tier/2A</option>
+       <option value="AC 3T">AC 3tier/3A</option>
+       <option value="Exe">Executive class chair car/Economy Class</option>
+       <option value="ACc">AC Chair Car</option>
+       <option value="Sl">Sleeper Class</option>
+       <option value="Sc">Second Class</option>
+       <option value="Gen">General</option>
+       </select><br>
+	<input type="submit" value="Book" /></div></center>
+</form>
+</body>
+</html>
