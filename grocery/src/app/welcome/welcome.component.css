@@ -1,0 +1,26 @@
+.shadow {
+	text-shadow: 3px 3px 2px rgb(9, 136, 47);
+}
+
+.logo-styles{
+	width: 50px; 
+	font-size: 50px; 
+	color: green;
+}
+
+.title-styles{
+	text-align: center; 
+	color: #40d132; 
+	font-size: 40px
+}
+
+.text-styles{
+	color: green;
+	font-size: 15px
+}
+
+.container-styles{
+	position: relative; 
+	top: 180px;
+	width:50%
+}

@@ -1,0 +1,92 @@
+[
+	{
+		"productId": 1,
+		"productName": "Red Apples",
+		"productCode": "TAB-120",
+		"description": "200/kg",
+		"price": 200,
+		"imageUrl": "assets/imgs/apple.jpg",
+		"Type": "fruit"
+	},
+	{
+		"productId": 2,
+		"productName": "Cabbage",
+		"productCode": "TAB-124",
+		"description": "17/600g-1000g",
+		"price": 17,
+		"imageUrl": "assets/imgs/cabbage.jpg",
+		"Type": "vegetable"
+	},
+	{
+		"productId": 3,
+		"productName": "Carrot",
+		"productCode": "TAB-125",
+		"description": "30/kg",
+		"price": 30,
+		"imageUrl": "assets/imgs/carrot.jpg",
+		"Type": "vegetable"
+	},
+	{
+		"productId": 4,
+		"productName": "Avocado",
+		"productCode": "TAB-126",
+		"description": "160/127gm",
+		"price": 160,
+		"imageUrl": "assets/imgs/avocado.jpg",
+		"Type": "fruit"
+	},
+	{
+		"productId": 5,
+		"productName": "Banana",
+		"productCode": "TAB-127",
+		"description": "20/4 pcs",
+		"price": 20,
+		"imageUrl": "assets/imgs/banana.jpg",
+		"Type": "fruit"
+	},
+	{
+		"productId": 6,
+		"productName": "Mango",
+		"productCode": "TAB-128",
+		"description": "70/kg",
+		"price": 70,
+		"imageUrl": "assets/imgs/mango.jpg",
+		"Type": "fruit"
+	},
+	{
+		"productId": 7,
+		"productName": "Bell Pepper",
+		"productCode": "TAB-129",
+		"description": "Red capsicum, 20/4pcs",
+		"price": 20,
+		"imageUrl": "assets/imgs/capsicum.jpg",
+		"Type": "vegetable"
+	},
+	{
+		"productId": 8,
+		"productName": "Potato",
+		"productCode": "TAB-130",
+		"description": "27/kg",
+		"price": 27,
+		"imageUrl": "assets/imgs/potato.jpg",
+		"Type": "vegetable"
+	},
+	{
+		"productId": 9,
+		"productName": "Onion",
+		"productCode": "TAB-131",
+		"description": "Red Onion, 30/kg",
+		"price": 30,
+		"imageUrl": "assets/imgs/onion.jpg",
+		"Type": "vegetable"
+	},
+	{
+		"productId": 10,
+		"productName": "Grapes",
+		"productCode": "TAB-132",
+		"description": "fresh green grapes, 150/500g",
+		"price": 30,
+		"imageUrl": "assets/imgs/grapes.jpg",
+		"Type": "fruit"
+	}
+]

@@ -1,0 +1,74 @@
+[
+	{
+		"productId": 100,
+		"productName": "Gingelly Oil",
+		"productCode": "MOB-120",
+		"description": "190/L",
+		"price": 190,
+		"imageUrl": "assets/imgs/gingelly oil.jpg",
+		"Type": "Oil"
+	},
+	{
+		"productId": 200,
+		"productName": "Ground Nut Oil",
+		"productCode": "MOB-124",
+		"description": "169/L",
+		"price": 169,
+		"imageUrl": "assets/imgs/ground nut oil.jpg",
+		"Type": "Oil"
+	},
+	{
+		"productId": 300,
+		"productName": "Butter",
+		"productCode": "MOB-125",
+		"description": "52/100g",
+		"price": 52,
+		"imageUrl": "assets/imgs/butter.jpg",
+		"Type": "Butter"
+	},
+	{
+		"productId": 400,
+		"productName": "Ghee",
+		"productCode": "MOB-126",
+		"description": "632/L",
+		"price": 632,
+		"imageUrl": "assets/imgs/ghee.jpg",
+		"Type": "Ghee"
+	},
+	{
+		"productId": 500,
+		"productName": "Rice",
+		"productCode": "MOB-127",
+		"description": "Basmati, 53/kg",
+		"price": 53,
+		"imageUrl": "assets/imgs/rice.jpg",
+		"Type": "Rice"
+	},
+	{
+		"productId": 600,
+		"productName": "All purpose flour",
+		"productCode": "MOB-128",
+		"description": "40/kg",
+		"price": 40,
+		"imageUrl": "assets/imgs/flour.jpg",
+		"Type": "flour"
+	},
+	{
+		"productId": 700,
+		"productName": "Green Gram",
+		"productCode": "MOB-129",
+		"description": "32/kg",
+		"price": 32,
+		"imageUrl": "assets/imgs/green gram.jpg",
+		"Type": "Pulses"
+	},
+	{
+		"productId": 800,
+		"productName": "Dal",
+		"productCode": "MOB-130",
+		"description": "43/kg",
+		"price": 43,
+		"imageUrl": "assets/imgs/dal.jpg",
+		"Type": "Pulses"
+	}
+]

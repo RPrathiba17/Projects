@@ -1,0 +1,38 @@
+<p>product-detail works!</p>
+<div class="container panelpos" style="background-image: url(assets/imgs/backgrnd.jpg); margin-top: 10%;">
+	<div class="row">
+		<div class="col-xs-7 col-xs-offset-3">
+			<div class='panel panel-success' style="margin-top: 10%;">
+				<div class='panel-heading'>{{pageTitle}}</div>
+				<div class='panel-body'>
+					<!-- Displays the selected product details -->
+					<table class="table table-striped tablebgcolor" *ngIf="product">
+						<th></th>
+						<tr>
+							<td text-align=center><img [src]='product.imageUrl' [style.width.px]='imageWidth'
+									[style.margin.px]='imageMargin' class='img-thumbnail' alt="Product Image"/></td>
+
+							<td>
+								<div class="txtsize txtcolor">{{product.productName}}</div>
+								<div>by {{product.productName}}</div>
+								<div>
+									<!-- Loads RatingComponent to display the rating of each product -->
+									<!-- <app-rating class="ratingcolor" [rate]='product.rating'></app-rating> -->
+								</div>
+								<hr class="hrcolor">
+								<div>Price: {{product.price}}</div>
+
+								<div>Description: {{product.description}}</div>
+							</td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div class='panel-footer'>
+					<a class='btn btn-default backbtnpos' (click)='onBack()'>
+						<em class='glyphicon glyphicon-chevron-left'></em> Back
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
