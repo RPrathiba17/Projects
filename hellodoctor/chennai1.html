@@ -1,0 +1,361 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <style>
+        body{
+            background-image: url("bg.png");
+            background-repeat: no-repeat;
+            background-size: 5000px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .transbox {
+            margin: 50px;
+            border-width: 2px;
+            border-style: groove;
+            border-color: black;
+            height:650px;
+            width:1250px;
+            margin-top: 70px;
+            padding-top: 5px;
+            
+        }
+        .outer1{
+            margin: 50px;
+            border-width: 2px;
+            border-style: groove;
+            border-color: black;
+            height:200px;
+            width:200px;
+            margin-top: 70px;
+            padding-top: 5px;
+            
+        }
+        .inner1{
+            margin-left: 48px;
+            border-width: 2px;
+            /* border-style: groove;
+            border-color: black; */
+            height:100px;
+            width:100px;
+            
+        }
+        .outer2{
+            margin: 80px;
+            border-width: 2px;
+            border-style: groove;
+            border-color: black;
+            height:200px;
+            width:200px;
+            position:relative;
+            margin-left: 330px;
+            margin-top: -250px;
+            padding-top: 5px;
+            
+        }
+        .inner2{
+            margin-left: 48px;
+            border-width: 2px;
+            height:100px;
+            width:100px;
+            
+        }
+        .outer3{
+            margin: 80px;
+            border-width: 2px;
+            border-style: groove;
+            border-color: black;
+            height:200px;
+            width:200px;
+            position:relative;
+            margin-left: 610px;
+            margin-top: -280px;
+            padding-top: 5px;
+            
+        }
+        .inner3{
+            margin-left: 48px;
+            border-width: 2px;
+            height:100px;
+            width:100px;
+            
+        }
+        .outer4{
+            margin: 80px;
+            border-width: 2px;
+            border-style: groove;
+            border-color: black;
+            height:200px;
+            width:200px;
+            position:relative;
+            margin-left: 890px;
+            margin-top: -280px;
+            padding-top: 5px;
+            
+        }
+        .inner4{
+            margin-left: 48px;
+            border-width: 2px;
+            height:100px;
+            width:100px;
+            
+        }
+        .outer5{
+            margin: 50px;
+            border-width: 2px;
+            border-style: groove;
+            border-color: black;
+            height:200px;
+            width:200px;
+            margin-top: 70px;
+            padding-top: 5px;
+            
+        }
+        .inner5{
+            margin-left: 48px;
+            border-width: 2px;
+            /* border-style: groove;
+            border-color: black; */
+            height:100px;
+            width:100px;
+            
+        }
+        .popup {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .popup .popuptext {
+            visibility: hidden;
+            width: 300px;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.63);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+        }
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+        .popup1 {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .popup1 .popuptext1{
+            visibility: hidden;
+            width: 300px;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.63);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+        }
+        .popup1 .show1 {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+        .popup2 {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .popup2 .popuptext2{
+            visibility: hidden;
+            width: 300px;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.63);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+        }
+        .popup2 .show2 {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+        .popup3 {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .popup3 .popuptext3{
+            visibility: hidden;
+            width: 300px;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.63);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+        }
+        .popup3 .show3 {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+        .popup4 {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .popup4 .popuptext4{
+            visibility: hidden;
+            width: 300px;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.63);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+        }
+        .popup4 .show4 {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+        @-webkit-keyframes fadeIn {
+            from {opacity: 0;} 
+            to {opacity: 1;}
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity:1 ;}
+        }
+    </style>
+    </head>
+    <body>
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;"><i><br>Hospitals in Chennai </i></h1>
+        <div class="transbox">
+            <div class="outer1">
+                <div class="inner1">
+                    <img src="apolloc2.jpg" style="height: 100px; width: 100px;"></img>
+                </div>
+                <div class="popup" onclick="myFunction()">&nbsp; <i><u>Apollo Speciality Hospital<br><center>Chennai</center></u></i>
+                    <span class="popuptext" id="myPopup"><i style="font-size:24px;" class="fa fa-map-marker">
+                    </i>&nbsp;Address: Padma Complex, 320, Anna Salai,&nbsp;Rathna Nagar, Alwarpet, Chennai, Tamil Nadu 600035
+                    <br><i style="font-size:24px;" class="fa fa-volume-control-phone"></i>
+                    &nbsp;1860 500 1066&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;</span>
+                  </div>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary" onClick="location.href='booking.html'">Book</button>
+                  </div>
+                
+            </div>
+            <div class="outer2">
+                <div class="inner2">
+                    <img src="frontier.png" style="height: 100px; width: 100px;"></img>
+                </div>
+                <div class="popup1" onclick="myFunction1()">&nbsp; <i><u>Frontier Lifeline Hospital<br><center>Chennai</center></u></i>
+                    <span class="popuptext1" id="myPopup1"><i style="font-size:24px;" class="fa fa-map-marker">
+                    </i>&nbsp;Address:R 30 C, Ambattur Industrial Estate Rd, <br>Mogappair, Chennai, <br>Tamil Nadu 600101&nbsp;
+                    <br><i style="font-size:24px;" class="fa fa-volume-control-phone"></i>
+                    &nbsp;044 4201 7575&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+                  </div>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary" onClick="location.href='booking.html'">Book</button>
+                  </div>
+                
+            </div>
+            <div class="outer3">
+                <div class="inner3">
+                    <img src="mehta1.png" style="height: 100px; width: 100px;"></img>
+                </div>
+                <div class="popup2" onclick="myFunction2()">&nbsp; <i><u>Mehta Hospitals Pvt.Ltd <br><center>Chennai</center></u></i>
+                    <span class="popuptext2" id="myPopup2"><i style="font-size:24px;" class="fa fa-map-marker">
+                    </i>&nbsp;Address: No 8 A, Burkit Rd, T. Nagar, Chennai,<br> Tamil Nadu 600017<br>
+                    <i style="font-size:24px;" class="fa fa-volume-control-phone"></i>
+                    &nbsp;91-44-4227 1001 1005&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+                  </div>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary" onClick="location.href='booking.html'">Book</button>
+                  </div>
+                
+            </div>
+            <div class="outer4">
+                <div class="inner4">
+                    <img src="billroth.png" style="height: 100px; width: 100px;"></img>
+                </div>
+                <div class="popup3" onclick="myFunction3()">&nbsp; <i><u>Billroth Hospitals Limited <br><center>Chennai</center></u></i>
+                    <span class="popuptext3" id="myPopup3"><i style="font-size:24px;" class="fa fa-map-marker">
+                    </i>&nbsp;Address: 43, Lakshmi Talkies Rd, Shenoy Nagar, Chennai, <br>Tamil Nadu 600030<br>
+                    <i style="font-size:24px;" class="fa fa-volume-control-phone"></i>
+                    &nbsp;044 4292 1777&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+                  </div>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary" onClick="location.href='booking.html'">Book</button>
+                  </div>
+                
+            </div>
+            <div class="outer5">
+                <div class="inner5">
+                    <img src="kauvery.jpg" style="height: 100px; width: 100px;"></img>
+                </div>
+                <div class="popup4" onclick="myFunction4()">&nbsp; <i>&emsp;&emsp;<u>Kauvery Hospital<br><center>Chennai</center></u></i>
+                    <span class="popuptext4" id="myPopup4"><i style="font-size:24px;" class="fa fa-map-marker">
+                    </i>&nbsp;Address: No. 8, Murrays Gate Rd, Alwarpet, Chennai,<br> Tamil Nadu 600018<br>&nbsp;
+                    <i style="font-size:24px;" class="fa fa-volume-control-phone"></i>
+                    &nbsp;044 4000 6000&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+                  </div>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary" onClick="location.href='booking.html'">Book</button>
+                  </div>
+                
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+            }
+            function myFunction1() {
+                var popup = document.getElementById("myPopup1");
+                popup.classList.toggle("show1");
+            }
+            function myFunction2() {
+                var popup = document.getElementById("myPopup2");
+                popup.classList.toggle("show2");
+            }
+            function myFunction3() {
+                var popup = document.getElementById("myPopup3");
+                popup.classList.toggle("show3");
+            }
+            function myFunction4() {
+                var popup = document.getElementById("myPopup4");
+                popup.classList.toggle("show4");
+            }
+        </script>
+    </body>
+</html>

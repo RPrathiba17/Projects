@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<head>
+    <title>Hello Doctor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>  
+<style>
+    body{
+            background-attachment: fixed; 
+            background-image: url(bg.png);
+            background-repeat: no-repeat;
+            height: 100%;
+            background-size: cover;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        } 
+    /* .header{
+            padding: 2px;
+            text-align:left;
+            background: white;
+            opacity: 0.75;
+            color:#5cb2f0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+        } */
+        .container{
+          padding-top: 110px;
+        }
+    .navlist {
+        position: absolute;
+        width: 100%;
+        color: #206ea7;
+        font-family: Georgia, 'Times New Roman', Times, serif;    
+        padding-top: 0px;
+        position: relative;
+    }
+     
+    .navlist-right{
+        float:right;
+    }         
+    .search input[type=text]{
+        width:400px;
+        height:35px;
+        border-radius:25px;
+        border: none;
+        padding-top: 7px;
+        color: black;
+    }     
+    .search{
+        float:right;
+        margin:20px;
+    }       
+    .search button{
+        background-color: #206ea7;
+        color: #f2f2f2;
+        float: right;
+        padding: 5px 10px;
+        margin-right: 16px;
+        font-size: 12px;
+        border: none;
+        cursor: pointer;
+    }
+    .transbox {
+            margin: 30px;
+            border-width: 2px;
+            border-style: groove;
+            border-color: black;
+            height:450px;
+            width:1250px;
+            margin-top: 70px;
+            padding-top: 5px;
+            
+        }
+        .left{
+            height:400px;
+            width:500px;
+            margin-left: 25px;
+        }
+        .transbox h2{
+            font-weight: bolder;
+            color: black;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:xx-large;
+        }
+        div.transbox p {
+            font-weight: bold;
+            color: black;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:large;
+            
+        }
+        .right{
+            height:100px;
+            width:800px;
+            margin-top: 10px;
+            margin-left: 600px;
+        }
+        .transbox1 {
+            margin: 30px;
+            border-width: 2px;
+            border-style: groove;
+            border-color: black;
+            height:450px;
+            width:1250px;
+            margin-top: 70px;
+            padding-top: 5px;
+            margin-left: 0px;
+            
+        }
+        .right1{
+            height:400px;
+            width:500px;
+            margin-left: 700px;
+        }
+        .transbox1 h2{
+            font-weight: bolder;
+            color: black;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:xx-large;
+        }
+        div.transbox1 p {
+            font-weight: bold;
+            color: black;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:large;
+            
+        }
+        .left1{
+            height:100px;
+            width:800px;
+            margin-top: 10px;
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+        .transbox2 {
+            margin: 30px;
+            border-width: 2px;
+            border-style: groove;
+            border-color: black;
+            height:450px;
+            width:1250px;
+            margin-top: 70px;
+            margin-left: 0px;
+            padding-top: 5px;
+            
+        }
+        .left2{
+            height:400px;
+            width:500px;
+            margin-left: 25px;
+            margin-top: -50px;
+        }
+        .transbox2 h2{
+            font-weight: bolder;
+            color: black;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size:xx-large;
+            margin-top:-10px;
+        }
+        .right2{
+            height:100px;
+            width:800px;
+            margin-top: 10px;
+            margin-left: 600px;
+        }
+        .register{
+          margin-left: 80px;
+	        background-color: rgba(0,0,0,0.5);
+	        width: 400px;
+	        font-size: 15px;
+	        border-radius: 50px;
+	        border: 1px soid rgba(255,255,255,0.3);
+	        box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+            color:#fff; 
+        }
+        form#register{
+	        margin: 40px;
+        }
+        label{
+	        font-family: 'Times New Roman', Times, serif;
+	        font-size: 15px;
+	        /* font-style: italic; */
+        }
+        input[type=name]{
+	        width: 300px;
+	        border: 1px solid #ddd;
+	        border-radius: 3px;
+	        outline: 0;
+	        padding: 7px;
+	        background-color: #fff;
+	        box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+        }
+        input[type=submit]{
+	        width: 150px;
+	        padding: 7px;
+	        font-size: 16px;
+	        font-family: sans-serif;
+	        font-weight: 600;
+	        border-radius : 3px;
+          margin-left: 80px;
+	        background-color: rgba(39, 110, 241, 0.8);
+	        color: #fff;
+	        cursor: pointer;
+	        border: 1px solid rgba(255,255,255,0.3);
+	        box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+        }
+        label,span{
+	        text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+        }
+
+</style>
+<body>
+    <div class="navlist">
+      <img style="display: inline;" src="logo.png" alt="logo" width="100" height="100" />
+            <h1 style="display: inline;"><i><b>Hello Doctor</b></i></h1>
+    
+    <div class="search">
+      <form action="#">
+          <input type="text"
+              placeholder=" Enter Location"
+              name="search">
+          <button>
+              <i class="fa fa-search"
+                  style="font-size: 18px;">
+              </i>
+          </button>
+      </form>
+  </div>
+</div>
+<div class="transbox">
+  <div class="right">
+      <img src="corousel2.jpg" height="410px" width="630px">
+  </div>
+  <div class="left">
+  <h2>Appointment of Best Doctors <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;in the city</h2>
+  <p>Book your appointments from anywhere and anytime. 
+    Look for best doctors and freeze their appointment for you!!! <br>
+    Book your slot on the basis of the specialist you want to consult.
+  </p>
+</div>
+<div class="transbox1">
+  <div class="left1">
+      <img src="corousel4.jpg" height="410px" width="630px">
+  </div>
+  <div class="right1">
+  <h2>Locate nearby<br>&emsp;&emsp;&emsp;&emsp;Clinics and Hospitals</h2>
+  <p>Search for the nearby clinic and hospitals by locations. Check out the hospitals that are 24/7 for emergencies.
+    Also locate nearby primary health care centers and also ayurvedha clinics.
+  </p>
+</div>
+<div class="transbox2">
+  <div class="right2">
+      <img src="corousel3.jpg" height="410px" width="630px">
+  </div>
+  <div class="left2">
+  <h2>Get Started<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Pick your slot!!!</h2>
+  <div class="register">
+    <br>
+    <h3 style="padding-left: 130px; font-family:Georgia, 'Times New Roman', Times, serif;">Book your slot</h3>
+    <form id="register" method="post">
+      <label for="district">Select district</label>
+                <br>
+                <select class="select-city selectpicker" style="width: 300px; padding: 7px; color: black;">
+                    <option value="chennai.html">Chennai</option>
+                    <option value="cbe.html">Coimbatore</option>
+                    <option value="madurai.html">Madurai</option>
+                    <option value="trichy.html">Trichy</option>
+                  </select>
+                    <br><br><br>
+                    <!-- name="dist" id="course" -->
+      <!-- <input type="submit" value="Book now"> -->
+      <br><br>
+    </form>
+    
+  </div>
+  <br><br><br>
+</div>
+<script>
+    $('.select-city').on('change', function(){
+    location.href = $(this).val();
+    });
+</script>
+</body>
