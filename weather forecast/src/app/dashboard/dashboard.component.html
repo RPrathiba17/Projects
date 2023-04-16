@@ -1,0 +1,72 @@
+<!-- <div class="body" style="background-color: var(--blue-1);width:100%;height:100vh; display: flex;justify-content: center;align-items: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 16px;">   -->
+<div class="b1">
+<!-- <img src="assets\img\sunremoved.png" alt="temp" style="height:200px; float:right"> -->
+    <div class="navlist">
+        <div class="search">
+        <form #form="ngForm" (submit)="onSubmit()">
+            <input
+              type="text"
+              placeholder="  search city"
+              name="city"
+              [(ngModel)]="cityName"
+            />
+            <button>
+                <i class="fa fa-search"
+                    style="font-size: 18px;">
+                </i>
+            </button>
+          </form>
+        </div>
+    </div>
+    <br>
+    <div class="container" style="margin-top: 80px;">
+        <div class="upper-data">
+            <img src="../assets/img/hot.jpg"  *ngIf="14 <= WeatherData.temp_celcius">
+            <img src="../assets/img/cold.png" *ngIf="14 >= WeatherData.temp_celcius">
+            <div class="weather-data">
+                <div class="location">{{ WeatherData.name }}</div>
+                <br>
+                <div class="temperature">{{ WeatherData.temp_celcius }}°C</div>
+            </div>
+        </div>
+        <div class="lower-data">
+            <div class="more-info-label">
+                More Information
+            </div>
+            <div class="more-info-container">
+                <div class="info-block">
+                    <div class="info-block-label">
+                          <img src="../assets/img/min.png" style="height: 2.8em;">
+                          <span>min</span>
+                    </div>
+                    <div class="info-block-value">{{ WeatherData.temp_min }}°C</div>
+                </div>
+                <div class="info-block">
+                    <div class="info-block-label">
+                          <img src="../assets/img/max.png" >
+                          <span>max</span>
+                    </div>
+                    <div class="info-block-value">{{ WeatherData.temp_max }}°C</div>
+                </div>
+                <div class="info-block">
+                    <div class="info-block-label">
+                          <img src="../assets/img/humidity.png">
+                          <span>humidity</span>
+                    </div>
+                    <div class="info-block-value">{{ WeatherData.main.humidity }}%</div>
+                </div>
+                <div class="info-block">
+                    <div class="info-block-label">
+                          <img src="../assets/img/wind.png" style="width: 3em; height:2em;">
+                          <span>wind</span>
+                    </div>
+                    <div class="info-block-value"> {{ WeatherData.wind.speed | number : "1.0-0" }}km/h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <img src="assets\img\removed.png" alt="temp" style="height:400px; padding-top: -200px; margin-top: -400px;"> -->
+    <!-- <img src="assets\img\cloud.png" alt="temp" style="height:400px; padding-top: -200px; margin-top: -400px; margin-left: -100px;"> -->
+    <!-- </div> -->
+</div>

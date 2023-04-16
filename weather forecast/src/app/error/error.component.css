@@ -1,0 +1,11 @@
+.body{
+    background-image: url('..\..\assets\img\error.jpg');
+    height:657px;
+    width: 1366px;
+    background-size:cover;
+    position: absolute;
+    margin-left:-10px;
+    margin: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}

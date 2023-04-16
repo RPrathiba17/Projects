@@ -1,0 +1,46 @@
+.b1{
+    background-image: url('..\..\assets\img\backgrnd.jpg');
+    height:657px;
+    width: 1366px;
+    background-size:cover;
+    position: absolute;
+    margin-left:-10px;
+    margin: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+h1{
+    font-size:xx-large;
+    margin-left: 600px;
+    margin-top: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container-styles{
+	position: relative; 
+	top: 180px;
+	width:50%
+}
+
+.padding{
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+
+.link-underline{
+   color:#3baf31;
+    text-decoration: underline;
+}
+
+.error{
+    color: red;
+    position:relative;
+    left:50px;
+}
+
+.valid {
+	border-left: 5px solid #42A948; /* green */
+}
+
+.invalid{
+	border-left: 5px solid #a94442; /* red */
+}

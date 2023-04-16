@@ -1,0 +1,48 @@
+.b1{
+    background-image: url('..\..\assets\img\bg.png');
+    height:657px;
+    width: 1366px;
+    background-size:cover;
+    position: absolute;
+    margin-left:-10px;
+    margin: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.navlist {
+    background-color: blue;
+    position: absolute;
+    width: 100%;
+    color: #206ea7;
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+    padding-top: 0px;
+    position: relative;
+}
+ 
+.navlist-right{
+    float:left;
+}         
+.search input[type=text]{
+    width:400px;
+    height:35px;
+    padding-left: 30px;
+    border-radius:25px;
+    border: none;
+    padding-top: 7px;
+    color: black;
+    background-color: lightblue;
+}     
+.search{
+    float:left;
+    margin:20px;
+}       
+.search button{
+    background-color: #206ea7;
+    color: #f2f2f2;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
